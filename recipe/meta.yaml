@@ -1,4 +1,4 @@
-{% set version = "0.3.2" %}
+{% set version = "0.4.0" %}
 
 package:
     name: siphon
@@ -7,7 +7,7 @@ package:
 source:
     fn: siphon-{{ version }}.tar.gz
     url: https://pypi.python.org/packages/source/s/siphon/siphon-{{ version }}.tar.gz
-    md5: dd08ff89b1176939d59acae0d544dd81
+    md5: 19a24db825cba554af10c89b8d7aff64
 
 build:
     number: 0
