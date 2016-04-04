@@ -23,6 +23,7 @@ requirements:
         - protobuf >=3.0.0a3
         - requests
         - netcdf4
+        - enum34  # [py27]
 
 test:
     imports:
