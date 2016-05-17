@@ -5,7 +5,7 @@ Home: https://github.com/Unidata/siphon
 
 Package license: MIT License
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: A collection of Python utilities for interacting with the Unidata technology stack.
 
@@ -69,9 +69,15 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/siphon-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/siphon-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/siphon-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/siphon-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/siphon-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/siphon-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/siphon/badges/version.svg)](https://anaconda.org/conda-forge/siphon)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/siphon/badges/downloads.svg)](https://anaconda.org/conda-forge/siphon)
 
 
 Updating siphon-feedstock
