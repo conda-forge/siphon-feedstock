@@ -1,6 +1,6 @@
 {% set name = "siphon" %}
-{% set version = "0.4.1" %}
-{% set sha256 = "50a75bfebe411eee758c78acc113e9c7d40a1b07a541985f0eac44385d7bf70b" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "f08b0a5b9635314ab7aee4750404ab1bf63ec19c79e8a263d753ea77b5d6bbb6" %}
 
 package:
   name: {{ name|lower }}
@@ -39,6 +39,7 @@ about:
   home: https://github.com/Unidata/siphon
   license: MIT
   license_family: MIT
+  license_file: LICENSE
   summary: 'A collection of Python utilities for interacting with the Unidata technology stack.'
   doc_url: https://unidata.github.io/siphon
   dev_url: https://github.com/Unidata/siphon
