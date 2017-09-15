@@ -1,6 +1,6 @@
 {% set name = "siphon" %}
-{% set version = "0.5.0" %}
-{% set sha256 = "f08b0a5b9635314ab7aee4750404ab1bf63ec19c79e8a263d753ea77b5d6bbb6" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "d74a1836d1a0a4994c9330ab048ea0b04ecfd4ab250f3c3d915a9c1a3a26f49d" %}
 
 package:
   name: {{ name|lower }}
@@ -24,6 +24,8 @@ requirements:
     - numpy
     - protobuf >=3.0.0a3
     - requests
+    - beautifulsoup4
+    - pandas
     - netcdf4
     - enum34  # [py27]
 
@@ -34,6 +36,7 @@ test:
     - siphon.catalog
     - siphon.ncss
     - siphon.radarserver
+    - siphon.simplewebservice.wyoming
 
 about:
   home: https://github.com/Unidata/siphon
