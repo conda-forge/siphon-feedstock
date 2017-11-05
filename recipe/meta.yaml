@@ -1,6 +1,6 @@
 {% set name = "siphon" %}
-{% set version = "0.6.0" %}
-{% set sha256 = "d74a1836d1a0a4994c9330ab048ea0b04ecfd4ab250f3c3d915a9c1a3a26f49d" %}
+{% set version = "0.6.1" %}
+{% set sha256 = "159af99bcb031700c23bc262947aba5bd9cc0912d2f5572b9a8869e2407bd4bf" %}
 
 package:
   name: {{ name|lower }}
