@@ -40,10 +40,10 @@ test:
 
 about:
   home: https://github.com/Unidata/siphon
-  license: MIT
-  license_family: MIT
+  license: BSD 3-Clause
+  license_family: BSD
   license_file: LICENSE
-  summary: 'A collection of Python utilities for interacting with the Unidata technology stack.'
+  summary: 'A collection of Python utilities for accessing remote geoscience data'
   doc_url: https://unidata.github.io/siphon
   dev_url: https://github.com/Unidata/siphon
 
