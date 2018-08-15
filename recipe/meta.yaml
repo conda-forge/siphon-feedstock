@@ -1,6 +1,6 @@
 {% set name = "siphon" %}
-{% set version = "0.7.0" %}
-{% set sha256 = "aa4e023113c388fc09d99eef74d1d0985eeffcc1d83ee59c708a56e506b18336" %}
+{% set version = "0.8.0" %}
+{% set sha256 = "1425cc02a82a434ca6b02d9f9c5a2839eecee5ace87de97cac222998b0181af0" %}
 
 package:
   name: {{ name|lower }}
@@ -40,10 +40,10 @@ test:
 
 about:
   home: https://github.com/Unidata/siphon
-  license: MIT
-  license_family: MIT
+  license: BSD 3-Clause
+  license_family: BSD
   license_file: LICENSE
-  summary: 'A collection of Python utilities for interacting with the Unidata technology stack.'
+  summary: 'A collection of Python utilities for accessing remote geoscience data'
   doc_url: https://unidata.github.io/siphon
   dev_url: https://github.com/Unidata/siphon
 
