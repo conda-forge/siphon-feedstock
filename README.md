@@ -3,11 +3,11 @@ About siphon
 
 Home: https://github.com/Unidata/siphon
 
-Package license: MIT
+Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: A collection of Python utilities for interacting with the Unidata technology stack.
+Summary: A collection of Python utilities for accessing remote geoscience data
 
 
 
