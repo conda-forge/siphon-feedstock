@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.9" %}
 
 package:
   name: siphon
@@ -6,13 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/siphon/siphon-{{ version }}.tar.gz
-  sha256: 1425cc02a82a434ca6b02d9f9c5a2839eecee5ace87de97cac222998b0181af0
-  patches:
-    - fix-xarray.patch
+  sha256: ade3c1f948500085cae619cd6ea75fd5d5e9c9a5377729f09869560588e6999d
 
 build:
-  number: 1004
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -42,7 +40,7 @@ about:
   license: BSD 3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'A collection of Python utilities for accessing remote geoscience data'
+  summary: A collection of Python utilities for accessing remote geoscience data
   doc_url: https://unidata.github.io/siphon
   dev_url: https://github.com/Unidata/siphon
 
