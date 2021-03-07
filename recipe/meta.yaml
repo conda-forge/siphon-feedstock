@@ -7,8 +7,6 @@ package:
 source:
   url: https://pypi.io/packages/source/s/siphon/siphon-{{ version }}.tar.gz
   sha256: ade3c1f948500085cae619cd6ea75fd5d5e9c9a5377729f09869560588e6999d
-  patches:
-    - fix-xarray.patch
 
 build:
   number: 0
