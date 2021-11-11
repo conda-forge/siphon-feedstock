@@ -9,7 +9,7 @@ source:
   sha256: ade3c1f948500085cae619cd6ea75fd5d5e9c9a5377729f09869560588e6999d
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -24,7 +24,7 @@ requirements:
     - beautifulsoup4
     - pandas
     - netcdf4
-    - enum34  # [py27]
+    - enum34  # [py==27]
 
 test:
   imports:
@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://github.com/Unidata/siphon
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: A collection of Python utilities for accessing remote geoscience data
