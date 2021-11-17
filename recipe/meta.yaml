@@ -1,30 +1,32 @@
+{% set name = "siphon" %}
 {% set version = "0.9" %}
 
+
 package:
-  name: siphon
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/s/siphon/siphon-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/siphon-{{ version }}.tar.gz
   sha256: ade3c1f948500085cae619cd6ea75fd5d5e9c9a5377729f09869560588e6999d
 
 build:
-  number: 1
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 2
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
-    - numpy
-    - protobuf >=3.0.0a3
-    - requests
-    - beautifulsoup4
+    - python >=3.6
+    - beautifulsoup4 >=4.6
+    - numpy >=1.8
     - pandas
+    - protobuf >=3.0.0a3
+    - requests >=1.2
     - netcdf4
-    - enum34  # [py==27]
 
 test:
   imports:
@@ -34,6 +36,10 @@ test:
     - siphon.ncss
     - siphon.radarserver
     - siphon.simplewebservice.wyoming
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/Unidata/siphon
