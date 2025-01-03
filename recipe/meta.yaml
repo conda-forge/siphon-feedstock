@@ -11,7 +11,7 @@ source:
   sha256: f99ff44568805d5c00c0599019302a4ea4874d861f00996c8b7de6de4d543f7b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,6 +19,8 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools >=61
+    - setuptools_scm >=3.4
   run:
     - python >={{ python_min }}
     - beautifulsoup4 >=4.9.1
@@ -38,6 +40,7 @@ test:
     - siphon.simplewebservice.wyoming
   commands:
     - pip check
+    - python -c "import siphon; print(siphon.__version__)"
   requires:
     - python {{ python_min }}
     - pip
