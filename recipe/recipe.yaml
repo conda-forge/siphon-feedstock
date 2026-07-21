@@ -1,0 +1,53 @@
+schema_version: 1
+
+context:
+  python_min: "3.11"
+  version: "0.11.0"
+
+package:
+  name: siphon
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/s/siphon/siphon-${{ version }}.tar.gz
+  sha256: a99930c774e259681e1c02393344438a4986a99e3e0730ab3acce55293d805fc
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools >=61
+    - setuptools-scm >=3.4
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - numpy >=1.25.0
+    - pandas >=2.1.0
+    - protobuf >=4.24.3
+    - requests >=2.30.0
+
+tests:
+  - python:
+      imports:
+        - siphon
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: A collection of Python utilities for interacting with the Unidata technology stack.
+  license: BSD-3-Clause
+  license_file: LICENSE
+  homepage: https://pypi.org/project/siphon/
+  documentation: https://unidata.github.io/siphon/
+
+extra:
+  recipe-maintainers:
+    - dcamron
+    - dopplershift
+    - ocefpaf
