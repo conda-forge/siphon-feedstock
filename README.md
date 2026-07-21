@@ -3,15 +3,13 @@ About siphon-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/siphon-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/Unidata/siphon
+Home: https://pypi.org/project/siphon/
 
 Package license: BSD-3-Clause
 
-Summary: A collection of Python utilities for accessing remote geoscience data
+Summary: A collection of Python utilities for interacting with the Unidata technology stack.
 
-Development: https://github.com/Unidata/siphon
-
-Documentation: https://unidata.github.io/siphon
+Documentation: https://unidata.github.io/siphon/
 
 Current build status
 ====================
