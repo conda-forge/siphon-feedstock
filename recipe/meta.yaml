@@ -1,5 +1,5 @@
 {% set name = "siphon" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/siphon-{{ version }}.tar.gz
-  sha256: f99ff44568805d5c00c0599019302a4ea4874d861f00996c8b7de6de4d543f7b
+  sha256: a99930c774e259681e1c02393344438a4986a99e3e0730ab3acce55293d805fc
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
